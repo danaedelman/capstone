@@ -11,13 +11,37 @@ body {
   /* font-family: 'Hind', sans-serif; */
   color: #717275;
   font-family: 'Lato', sans-serif;
+  text-align: left;
 
 }
 
-.content-container {
-  display: flex;
-  padding: 32px 0px 32px 24px;
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2em;
+  /* text-align: left; */
+  color: #4b4e4f;
 }
+
+
+.container {
+  color: #4b4e4f;
+
+}
+
+.container h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.container span {
+  font-size: .90rem;
+  padding-bottom: 80px;
+}
+
+
+/*  Header */
 
 
 header {
@@ -103,14 +127,14 @@ a {
 
 }
 
-.banner-copy h1 {
+/* .banner-copy h1 {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2em;
   text-align: left;
   color: #4b4e4f;
 
-}
+} */
 
 .banner-copy h3 {
   color: #4b4e4f;
@@ -118,7 +142,7 @@ a {
   padding-bottom: 1.5rem;
   font-size: 1.5rem;
   line-height: 1.6em;
-  text-align: left;
+  /* text-align: left; */
 
 }
 
@@ -143,10 +167,94 @@ a {
 
 
 
-/* About Us Section */
+/* Information Section */
+
+.info {
+  display: flex;
+}
+
+.practicing {
+  width: 60%;
+  padding: 32px 24px;
 
 
+}
 
+.practicing img {
+  width: 100%;
+  height: auto;
+
+}
+
+.practicing h1 {
+  padding: 32px 0 24px 0;
+}
+
+.practicing p {
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.practicing span {
+  font-size: .85rem;
+  font-weight: bold;
+  position: relative;
+  top: 32px;
+}
+
+.info-modules {
+
+  width: 40%;
+  padding-top: 32px;
+  border-left: 1px solid lightgray;
+  position: relative;
+
+}
+.orientation .module-copy {
+  display: inline-block;
+  /* float: right; */
+  max-width: 35%;
+  position: absolute;
+ top: 70px;
+
+}
+
+.campus .module-copy {
+  display: inline-block;
+  /* float: right; */
+  max-width: 35%;
+  position: absolute;
+  top: 290px;
+
+}
+
+.lecture .module-copy {
+  display: inline-block;
+  /* float: right; */
+  max-width: 35%;
+  position: absolute;
+  top: 490px;
+
+}
+
+.module img {
+  width: 35%;
+  height: auto;
+  /* padding-right: 24px; */
+  padding: 16px 24px;
+}
+
+.module-copy span {
+  line-height: 1.5em;
+}
+
+.read-more a{
+  color: #7fe4e8;
+}
+
+.lecture {
+  background-color: lightgray;
+}
 /* Start Learning */
 
 
