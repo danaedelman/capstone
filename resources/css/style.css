@@ -1,0 +1,157 @@
+/* Universal Styles */
+font-family: 'Hind', sans-serif;
+font-family: 'Yantramanav', sans-serif;
+
+html {
+  font-size: 16px;
+
+}
+
+body {
+  /* font-family: 'Hind', sans-serif; */
+  color: #717275;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.content-container {
+  display: flex;
+  padding: 32px 0px 32px 24px;
+}
+
+
+header {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 64px;
+  align-items: center;
+
+}
+
+
+header img {
+  height: 32px;
+
+}
+
+.company {
+  display: inline-flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+}
+
+.name {
+  padding-top: 6px;
+}
+
+
+.colmar{
+  color: #4b4e4f;
+  padding-left: .20rem;
+
+}
+
+.academy {
+    color: #b7bbbc;
+}
+
+
+/*  Nav */
+nav ul{
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #717275;
+}
+
+.border {
+  background-color: #7fe4e8;
+  height: 64px;
+  width: 16px;
+}
+
+
+/* Banner */
+
+.banner {
+  background-color: lightgray;
+  display: flex;
+
+}
+
+.banner img{
+  display: flex;
+  width: 60%;
+  height: auto;
+  padding: 32px 24px;
+}
+
+.banner-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 25%;
+
+
+
+}
+
+.banner-copy h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2em;
+  text-align: left;
+  color: #4b4e4f;
+
+}
+
+.banner-copy h3 {
+  color: #4b4e4f;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  text-align: left;
+
+}
+
+.button {
+  font-size: 1.5rem;
+  background-color: #4b4e4f;
+  width: 312px;
+  height: 45px;
+  text-align: center;
+
+
+
+}
+
+.button span {
+  position: relative;
+  color: white;
+  top: 8px;
+
+}
+
+
+
+
+/* About Us Section */
+
+
+
+/* Start Learning */
+
+
+/* Thesis Exhibit */
+
+
+
+/* Footer */
