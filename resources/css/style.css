@@ -14,10 +14,9 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: bold;
   line-height: 1.2em;
-  /* text-align: left; */
   color: #4b4e4f;
 }
 
@@ -105,21 +104,20 @@ a {
   background-color: #e0e2e5;
 }
 
-
 .banner-image-container {
   width: 60%;
-  display: flex;
   padding: 32px 0 32px 24px;
-  flex-direction: column;
+
 }
 
 .banner-image-container img{
-  width: 103.75%;
-
+ width: 100%;
 }
 
 .banner-copy-container {
   width: 40%;
+  padding-left: 24px;
+  display: flex;
 
 }
 
@@ -127,16 +125,13 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 70%;
 }
-
-
-
 .banner-copy h3 {
   color: #4b4e4f;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.6em;
 }
 
@@ -166,9 +161,7 @@ a {
 .practicing {
 
   width: 60%;
-  display: flex;
   padding: 32px 24px 32px 24px;
-  flex-direction: column;
   border-right: 1px solid #edeeef;
 }
 
@@ -200,8 +193,6 @@ a {
   display: flex;
   flex-direction: column;
   width: 40%;
-  /* margin-left: 24px; */
-  /* border-left: 1px solid #edeeef; */
   margin-bottom: 34px;
 }
 
@@ -323,7 +314,6 @@ width: 100%;
 
 .exhibit {
   display: flex;
-  /* padding-bottom: 32px; */
 }
 
 .thesis {
@@ -337,11 +327,6 @@ video {
   width: 100%;
 }
 
-.thesis-copy {
-
-
-
-}
 
 .thesis-copy h3 {
   padding: 24px 0;
