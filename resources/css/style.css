@@ -148,7 +148,7 @@ a {
   text-align: center;
 }
 
-.button span {
+.button a {
   position: relative;
   color: white;
   top: 8px;
@@ -161,16 +161,15 @@ a {
 
 .info {
   display: flex;
-  padding-bottom: 32px;
 }
 
 .practicing {
 
   width: 60%;
   display: flex;
-  padding: 32px 0 32px 24px;
+  padding: 32px 24px 32px 24px;
   flex-direction: column;
-  /* margin-bottom: 12px; */
+  border-right: 1px solid #edeeef;
 }
 
 .practicing img {
@@ -185,15 +184,13 @@ a {
 .practicing p {
   font-weight: 300;
   line-height: 1.5em;
+  padding-bottom: 32px;
 
 }
 
 .practicing span {
   font-size: .85rem;
   font-weight: bold;
-  position: relative;
-  top: 32px;
-
 }
 
 
@@ -203,10 +200,12 @@ a {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin-left: 24px;
-  border-left: 1px solid #edeeef;
+  /* margin-left: 24px; */
+  /* border-left: 1px solid #edeeef; */
   margin-bottom: 34px;
 }
+
+
 
 .module {
   display: flex;
@@ -265,6 +264,7 @@ a {
 
 .classes-container {
   display: flex;
+  padding-bottom: 32px;
 }
 
 
@@ -323,11 +323,13 @@ width: 100%;
 
 .exhibit {
   display: flex;
+  /* padding-bottom: 32px; */
 }
 
 .thesis {
+
   width: 60%;
-  padding: 0 24px 24px 24px;
+  padding: 0 24px 32px 24px;
 }
 
 
@@ -335,7 +337,20 @@ video {
   width: 100%;
 }
 
+.thesis-copy {
 
+
+
+}
+
+.thesis-copy h3 {
+  padding: 24px 0;
+
+}
+
+.thesis-copy span {
+  line-height: 1.4rem;
+}
 /*  Thesis module section */
 
 
@@ -363,7 +378,39 @@ video {
 .exhibit-copy {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 65%;
 }
 
+.exhibit-copy span {
+  line-height: 1.4rem;
+}
+
 /* Footer */
+
+footer {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  border-top: 1px solid #edeeef;
+  padding-bottom: 32px;
+}
+
+footer span {
+  padding: 16px 24px;
+}
+
+footer nav {
+  display: flex;
+  padding-right: 24px;
+}
+
+footer ul li{
+  padding-left: 12px;
+
+}
+
+footer a {
+  color: #949496;
+  font-size: .90rem;
+}
