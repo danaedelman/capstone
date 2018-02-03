@@ -28,11 +28,21 @@ p {
   color: #4b4e4f;
 }
 
+a {
+  text-decoration: none;
+  color: #4b4e4f;
+}
+
+a:hover {
+  text-shadow: 1px 1px 1px darkgray;
+}
+
 
 .container h3{
   font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 8px;
+  color: #4b4e4f;
 }
 
 .container span {
@@ -85,9 +95,9 @@ nav ul{
   align-items: center;
 }
 
-a {
-  text-decoration: none;
-  color: #717275;
+nav a:active {
+  background-color: #7fe4e8;
+  border-radius: 10%;
 }
 
 .border {
@@ -141,12 +151,26 @@ a {
   width: 312px;
   height: 45px;
   text-align: center;
+  border-radius: 24%;
+
 }
 
 .button a {
   position: relative;
   color: white;
   top: 8px;
+}
+
+.button a:active {
+  color: #514b4b;
+  transition: color 150ms ease-out 50ms;
+
+}
+
+.button:active {
+  background-color: #ededed;
+  transition: background-color 150ms ease-out 23ms;
+
 }
 
 
@@ -235,6 +259,10 @@ a {
   color: #4286f4;
 }
 
+.read-more a:hover {
+  text-shadow: .25px .25px .25px #2a368e;
+}
+
 .lecture {
   background-color: #e0e2e5;
 }
@@ -270,8 +298,8 @@ a {
   display: flex;
   flex-direction: column;
   width: 30%;
-  height: 300px;
-  padding-bottom: 32px;
+  /* height: 300px; */
+  padding-bottom: 16px;
   background-color: white;
   margin: 12px;
 }
@@ -280,8 +308,8 @@ a {
   display: flex;
   flex-direction: column;
   width: 30%;
-  height: 300px;
-  padding-bottom: 32px;
+
+  padding-bottom: 16px;
   background-color: white;
   margin: 12px;
 }
@@ -291,16 +319,19 @@ width: 100%;
 }
 
 .class h3, .class-row2 h3{
+
   padding: 16px;
 }
 
 .class span, .class-row2 span{
-  padding: 8px 16px;
+  /* padding: 8px 16px; */
+  padding-left: 16px;
+  padding-bottom: 8px;
 }
 
 .class-desc {
   line-height: 1.4rem;
-  padding-bottom: 24px;
+  /* padding-bottom: 16px; */
 }
 
 
