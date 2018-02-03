@@ -4,7 +4,6 @@ font-family: 'Yantramanav', sans-serif;
 
 html {
   font-size: 16px;
-
 }
 
 body {
@@ -12,7 +11,6 @@ body {
   color: #717275;
   font-family: 'Lato', sans-serif;
   text-align: left;
-
 }
 
 h1 {
@@ -23,11 +21,14 @@ h1 {
   color: #4b4e4f;
 }
 
-
+span,
+p {
+  color: #949496;
+}
 .container {
   color: #4b4e4f;
-
 }
+
 
 .container h3{
   font-size: 1.5rem;
@@ -37,7 +38,6 @@ h1 {
 
 .container span {
   font-size: .90rem;
-  padding-bottom: 80px;
 }
 
 
@@ -52,20 +52,17 @@ header {
   padding-right: 24px;
   height: 64px;
   align-items: center;
-
 }
 
 
 header img {
   height: 32px;
-
 }
 
 .company {
   display: inline-flex;
   font-size: 1.2rem;
   font-weight: 600;
-
 }
 
 .name {
@@ -76,7 +73,6 @@ header img {
 .colmar{
   color: #4b4e4f;
   padding-left: .20rem;
-
 }
 
 .academy {
@@ -105,36 +101,36 @@ a {
 /* Banner */
 
 .banner {
-  background-color: lightgray;
   display: flex;
+  background-color: #e0e2e5;
+}
+
+
+.banner-image-container {
+  width: 60%;
+  display: flex;
+  padding: 32px 0 32px 24px;
+  flex-direction: column;
+}
+
+.banner-image-container img{
+  width: 103.75%;
 
 }
 
-.banner img{
-  display: flex;
-  width: 60%;
-  height: auto;
-  padding: 32px 24px;
+.banner-copy-container {
+  width: 40%;
+
 }
 
 .banner-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 25%;
-
-
-
+  width: 40%;
 }
 
-/* .banner-copy h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  line-height: 1.2em;
-  text-align: left;
-  color: #4b4e4f;
 
-} */
 
 .banner-copy h3 {
   color: #4b4e4f;
@@ -142,8 +138,6 @@ a {
   padding-bottom: 1.5rem;
   font-size: 1.5rem;
   line-height: 1.6em;
-  /* text-align: left; */
-
 }
 
 .button {
@@ -152,16 +146,12 @@ a {
   width: 312px;
   height: 45px;
   text-align: center;
-
-
-
 }
 
 .button span {
   position: relative;
   color: white;
   top: 8px;
-
 }
 
 
@@ -171,19 +161,21 @@ a {
 
 .info {
   display: flex;
+  padding-bottom: 32px;
 }
 
 .practicing {
+
   width: 60%;
-  padding: 32px 24px;
-
-
+  display: flex;
+  padding: 32px 0 32px 24px;
+  flex-direction: column;
+  /* margin-bottom: 12px; */
 }
 
 .practicing img {
   width: 100%;
-  height: auto;
-
+  height: 100;
 }
 
 .practicing h1 {
@@ -193,6 +185,7 @@ a {
 .practicing p {
   font-weight: 300;
   line-height: 1.5em;
+
 }
 
 .practicing span {
@@ -200,66 +193,177 @@ a {
   font-weight: bold;
   position: relative;
   top: 32px;
+
 }
+
+
+/* Information Module Section  */
 
 .info-modules {
-
+  display: flex;
+  flex-direction: column;
   width: 40%;
-  padding-top: 32px;
-  border-left: 1px solid lightgray;
-  position: relative;
-
-}
-.orientation .module-copy {
-  display: inline-block;
-  /* float: right; */
-  max-width: 35%;
-  position: absolute;
- top: 70px;
-
+  margin-left: 24px;
+  border-left: 1px solid #edeeef;
+  margin-bottom: 34px;
 }
 
-.campus .module-copy {
-  display: inline-block;
-  /* float: right; */
-  max-width: 35%;
-  position: absolute;
-  top: 290px;
-
-}
-
-.lecture .module-copy {
-  display: inline-block;
-  /* float: right; */
-  max-width: 35%;
-  position: absolute;
-  top: 490px;
-
+.module {
+  display: flex;
+  padding: 16px;
+  width: 100%;
 }
 
 .module img {
-  width: 35%;
-  height: auto;
-  /* padding-right: 24px; */
-  padding: 16px 24px;
+ width: 35%;
+ height: 100%;
+}
+
+.module-copy {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.campus {
+  border-top: double  #edeeef;
+
+}
+
+.orientation {
+   padding-top: 32px;
 }
 
 .module-copy span {
-  line-height: 1.5em;
+  padding-bottom: 8px;
+  line-height: 1.4rem;
 }
 
 .read-more a{
-  color: #7fe4e8;
+  color: #4286f4;
 }
 
 .lecture {
-  background-color: lightgray;
+  background-color: #e0e2e5;
 }
+
+
+
 /* Start Learning */
+
+.learning {
+  background-color: #edeeef;
+}
+
+.learning h1 {
+  text-align: center;
+  padding: 32px 0;
+}
+
+
+.classes-container {
+  display: flex;
+}
+
+
+.classes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 72px;
+}
+
+.class {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 300px;
+  padding-bottom: 32px;
+  background-color: white;
+  margin: 12px;
+}
+
+.class-row2 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 300px;
+  padding-bottom: 32px;
+  background-color: white;
+  margin: 12px;
+}
+
+.class img, .class-row2 img {
+width: 100%;
+}
+
+.class h3, .class-row2 h3{
+  padding: 16px;
+}
+
+.class span, .class-row2 span{
+  padding: 8px 16px;
+}
+
+.class-desc {
+  line-height: 1.4rem;
+  padding-bottom: 24px;
+}
 
 
 /* Thesis Exhibit */
 
 
+.thesis-title {
+  text-align: center;
+  padding: 32px 0;
+}
+
+.exhibit {
+  display: flex;
+}
+
+.thesis {
+  width: 60%;
+  padding: 0 24px 24px 24px;
+}
+
+
+video {
+  width: 100%;
+}
+
+
+/*  Thesis module section */
+
+
+
+.thesis-modules {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.exhibit-module {
+  display: flex;
+}
+.thesis-modules img {
+  width: 35%;
+  height: 100%;
+  padding: 16px;
+}
+
+.module1 {
+  background-color: #e0e2e5;
+}
+
+
+.exhibit-copy {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
 
 /* Footer */
