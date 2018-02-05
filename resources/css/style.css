@@ -24,6 +24,7 @@ span,
 p {
   color: #949496;
 }
+
 .container {
   color: #4b4e4f;
 }
@@ -97,7 +98,6 @@ nav ul{
 
 nav a:active {
   background-color: #7fe4e8;
-  border-radius: 10%;
 }
 
 .border {
@@ -106,7 +106,39 @@ nav a:active {
   width: 16px;
 }
 
+.mobile-nav {
+  display: none;
+}
 
+@media only screen and (max-width: 480px) {
+
+  header {
+    display: flex;
+    width: 440px;
+
+  }
+  .company {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    flex: 1;
+  justify-content: space-between;
+}
+
+.mobile-nav a:active {
+  background-color: #7fe4e8;
+}
+
+  .name {
+    display: none;
+  }
+
+}
 /* Banner */
 
 .banner {
@@ -151,7 +183,7 @@ nav a:active {
   width: 312px;
   height: 45px;
   text-align: center;
-  border-radius: 24%;
+  /* border-radius: 24%; */
 
 }
 
@@ -173,7 +205,50 @@ nav a:active {
 
 }
 
+@media only screen and (max-width: 480px) {
 
+  .banner {
+    display: block;
+    background-color: #e0e2e5;
+  }
+
+  .banner-image-container {
+    width: 100%;
+    padding: 0;
+
+  }
+
+  .banner-copy-container {
+    width: 100%;
+    padding: 32px 16px;
+  }
+
+  .banner-copy {
+    width: 90%;
+  }
+
+  .banner-copy h3 {
+    color: #4b4e4f;
+    font-size: 1.3rem;
+    line-height: 1.6em
+  }
+
+  .button {
+    font-size: 1.5rem;
+    background-color: #4b4e4f;
+    /* width: 100%; */
+   width: 103.5%;
+    height: 45px;
+    text-align: center;
+  }
+
+  .button a {
+    position: relative;
+    color: white;
+    top: 8px;
+  }
+
+}
 
 
 /* Information Section */
@@ -183,7 +258,6 @@ nav a:active {
 }
 
 .practicing {
-
   width: 60%;
   padding: 32px 24px 32px 24px;
   border-right: 1px solid #edeeef;
@@ -250,6 +324,7 @@ nav a:active {
    padding-top: 32px;
 }
 
+
 .module-copy span {
   padding-bottom: 8px;
   line-height: 1.4rem;
@@ -266,6 +341,66 @@ nav a:active {
 .lecture {
   background-color: #e0e2e5;
 }
+
+.info-mobile {
+  display: none;
+}
+
+
+@media only screen and (max-width: 480px){
+
+
+
+.practicing {
+  display: none;
+}
+
+.info-modules {
+  display: none;
+
+}
+
+.info-mobile {
+  display: block;
+  width: 100%;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #edeeef;
+}
+
+.module-mobile {
+  padding: 16px;
+}
+
+.module-mobile img {
+  width: 100%;
+}
+
+.module-mobile-copy {
+  padding-left: 16px;
+  padding-top: 16px;
+  line-height: 1.4rem;
+}
+
+.module-mobile h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4b4e4f;
+}
+
+
+
+.module-mobile span {
+
+  line-height: 1.4rem;
+
+}
+.module-mobile .read-more {
+  padding-top: 8px;
+
+}
+}
+
+
 
 
 
@@ -298,7 +433,6 @@ nav a:active {
   display: flex;
   flex-direction: column;
   width: 30%;
-  /* height: 300px; */
   padding-bottom: 16px;
   background-color: white;
   margin: 12px;
@@ -308,7 +442,6 @@ nav a:active {
   display: flex;
   flex-direction: column;
   width: 30%;
-
   padding-bottom: 16px;
   background-color: white;
   margin: 12px;
@@ -331,8 +464,61 @@ width: 100%;
 
 .class-desc {
   line-height: 1.4rem;
-  /* padding-bottom: 16px; */
+
 }
+
+/* start learning mobile  */
+
+@media only screen and (max-width: 480px){
+
+  .classes-container {
+    display: block;
+    padding-bottom: 32px;
+
+  }
+
+
+  .learning {
+    background-color: white;
+  }
+
+.class img,
+.class-row2 img {
+  display: none;
+}
+
+.class span, .class-row2 span{
+  display: none;
+}
+
+.classes {
+  display: block;
+
+
+}
+
+.class {
+  display: block;
+  background-color: #edeeef;
+  width: 100%;
+
+  /* margin: 12px; */
+}
+
+.class-row2 {
+  display: block;
+  width: 100%;
+  background-color: #edeeef;
+
+  /* margin: 12px; */
+}
+
+
+}
+
+
+
+
 
 
 /* Thesis Exhibit */
