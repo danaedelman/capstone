@@ -1,6 +1,6 @@
 /* Universal Styles */
-font-family: 'Hind', sans-serif;
-font-family: 'Yantramanav', sans-serif;
+/* font-family: 'Hind', sans-serif;
+font-family: 'Yantramanav', sans-serif; */
 
 html {
   font-size: 16px;
@@ -38,7 +38,6 @@ a:hover {
   text-shadow: 1px 1px 1px darkgray;
 }
 
-
 .container h3{
   font-size: 1.5rem;
   font-weight: bold;
@@ -53,7 +52,6 @@ a:hover {
 
 /*  Header */
 
-
 header {
   display: flex;
   flex: 1;
@@ -63,7 +61,6 @@ header {
   height: 64px;
   align-items: center;
 }
-
 
 header img {
   height: 32px;
@@ -79,7 +76,6 @@ header img {
   padding-top: 6px;
 }
 
-
 .colmar{
   color: #4b4e4f;
   padding-left: .20rem;
@@ -91,6 +87,7 @@ header img {
 
 
 /*  Nav */
+
 nav ul{
   display: flex;
   align-items: center;
@@ -114,9 +111,8 @@ nav a:active {
 
   header {
     display: flex;
-
-
   }
+
   .company {
     display: none;
   }
@@ -124,6 +120,7 @@ nav a:active {
   nav {
     display: none;
   }
+
   .mobile-nav {
     display: flex;
     flex: 1;
@@ -137,8 +134,8 @@ nav a:active {
   .name {
     display: none;
   }
-
 }
+
 /* Banner */
 
 .banner {
@@ -149,7 +146,6 @@ nav a:active {
 .banner-image-container {
   width: 60%;
   padding: 32px 0 32px 24px;
-
 }
 
 .banner-image-container img{
@@ -160,7 +156,6 @@ nav a:active {
   width: 40%;
   padding-left: 24px;
   display: flex;
-
 }
 
 .banner-copy {
@@ -168,7 +163,9 @@ nav a:active {
   flex-direction: column;
   justify-content: center;
   width: 70%;
+  padding-left: 24px;
 }
+
 .banner-copy h3 {
   color: #4b4e4f;
   padding-top: 1.5rem;
@@ -183,14 +180,13 @@ nav a:active {
   width: 312px;
   height: 45px;
   text-align: center;
-  /* border-radius: 24%; */
-
 }
+
 
 .button a {
   position: relative;
   color: white;
-  top: 8px;
+  top: 10px;
 }
 
 .button a:active {
@@ -224,28 +220,16 @@ nav a:active {
   }
 
   .banner-copy {
-    width: 90%;
+    width: 100%;
+    padding: 0 26px 0 0;
   }
 
-  .banner-copy h3 {
-    color: #4b4e4f;
-    font-size: 1.3rem;
-    line-height: 1.6em
-  }
 
   .button {
     font-size: 1.5rem;
     background-color: #4b4e4f;
-    width: 103.5%;
-    height: 45px;
-    text-align: center;
-  }
-
-  .button a {
-    position: relative;
-    color: white;
-    top: 8px;
-  }
+    width: 99.15%;
+}
 
 }
 
@@ -445,12 +429,10 @@ width: 100%;
 }
 
 .class h3, .class-row2 h3{
-
   padding: 16px;
 }
 
 .class span, .class-row2 span{
-  /* padding: 8px 16px; */
   padding-left: 16px;
   padding-bottom: 8px;
 }
@@ -464,57 +446,60 @@ width: 100%;
 
 @media only screen and (max-width: 480px){
 
-  .learning {
-    text-align: left;
-  }
-
-  .learning h1 {
-    text-align: center;
-    padding: 32px 0;
-  }
 
   .classes-container {
     display: block;
     padding-bottom: 32px;
     border-bottom: 1px solid #edeeef;
-    text-align: left;
+    width: 100%;
+
   }
 
   .learning {
     background-color: white;
   }
 
-.class img,
-.class-row2 img {
-  display: none;
+  .learning h1 {
+    text-align: center;
+    padding: 32px 0 16px 0;
+  }
+
+
+ .class img,
+ .class-row2 img {
+    display: none;
 }
 
 .class span, .class-row2 span{
   display: none;
 }
 
-.classes {
+ .classes {
   display: block;
-  text-align: left;
+  padding: 0  16px 0 16px;
+
+
 }
 
-.class {
-
+ .class {
   background-color: #edeeef;
   width: 100%;
-  text-align: left;
+  padding: 0;
+  margin: 0 0 8px 0;
 
 }
 
-.class-row2 {
-
+ .class-row2 {
   width: 100%;
   background-color: #edeeef;
-  text-align: left;
+  margin: 0 0 8px 0;
+  padding: 0;
+
 }
+
 
   .class h3, .class-row2 h3{
-    text-align: left;
+    padding: 16px 0 24px 16px;
 }
 
 }
@@ -531,12 +516,12 @@ width: 100%;
 
 .exhibit {
   display: flex;
+  padding-left: 24px;
+  padding-bottom: 32px;
 }
 
 .thesis {
-
   width: 60%;
-  padding: 0 24px 32px 24px;
 }
 
 
@@ -547,12 +532,13 @@ video {
 
 .thesis-copy h3 {
   padding: 24px 0;
-
 }
 
 .thesis-copy span {
   line-height: 1.4rem;
 }
+
+
 /*  Thesis module section */
 
 
@@ -561,6 +547,7 @@ video {
   display: flex;
   flex-direction: column;
   width: 40%;
+  padding-left: 24px;
 }
 
 .exhibit-module {
@@ -590,7 +577,11 @@ video {
 
 
 @media only screen and (max-width: 480px) {
-
+  .exhibit {
+    display: block;
+    padding-left: 0;
+    padding-bottom: 32px;
+  }
 
   .thesis-title {
     text-align: center;
@@ -600,18 +591,9 @@ video {
 
   .thesis {
     width: 100%;
-
     padding-bottom: 24px;
   }
 
-  video {
-    /* width: 110% */
-
-  }
-
-  .container {
-
-  }
 
   .thesis-modules {
     display: none;
@@ -621,6 +603,7 @@ video {
     display: none;
   }
 }
+
 /* Footer */
 
 footer {
@@ -628,7 +611,7 @@ footer {
   flex: 1;
   justify-content: space-between;
   border-top: 1px solid #edeeef;
-  padding-bottom: 32px;
+  padding-bottom: 52px;
 }
 
 footer span {
@@ -656,6 +639,7 @@ footer a {
     padding-bottom: 16px;
     border-top: none;
   }
+
   footer nav {
     display: none;
   }
