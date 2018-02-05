@@ -114,7 +114,7 @@ nav a:active {
 
   header {
     display: flex;
-    width: 440px;
+
 
   }
   .company {
@@ -236,8 +236,7 @@ nav a:active {
   .button {
     font-size: 1.5rem;
     background-color: #4b4e4f;
-    /* width: 100%; */
-   width: 103.5%;
+    width: 103.5%;
     height: 45px;
     text-align: center;
   }
@@ -295,7 +294,6 @@ nav a:active {
 }
 
 
-
 .module {
   display: flex;
   padding: 16px;
@@ -303,8 +301,8 @@ nav a:active {
 }
 
 .module img {
- width: 35%;
- height: 100%;
+  width: 35%;
+  height: 100%;
 }
 
 .module-copy {
@@ -357,7 +355,6 @@ nav a:active {
 
 .info-modules {
   display: none;
-
 }
 
 .info-mobile {
@@ -388,19 +385,15 @@ nav a:active {
 }
 
 
-
 .module-mobile span {
-
   line-height: 1.4rem;
-
 }
+
 .module-mobile .read-more {
   padding-top: 8px;
 
 }
 }
-
-
 
 
 
@@ -471,12 +464,21 @@ width: 100%;
 
 @media only screen and (max-width: 480px){
 
+  .learning {
+    text-align: left;
+  }
+
+  .learning h1 {
+    text-align: center;
+    padding: 32px 0;
+  }
+
   .classes-container {
     display: block;
     padding-bottom: 32px;
-
+    border-bottom: 1px solid #edeeef;
+    text-align: left;
   }
-
 
   .learning {
     background-color: white;
@@ -493,31 +495,29 @@ width: 100%;
 
 .classes {
   display: block;
-
-
+  text-align: left;
 }
 
 .class {
-  display: block;
+
   background-color: #edeeef;
   width: 100%;
+  text-align: left;
 
-  /* margin: 12px; */
 }
 
 .class-row2 {
-  display: block;
+
   width: 100%;
   background-color: #edeeef;
-
-  /* margin: 12px; */
+  text-align: left;
 }
 
-
+  .class h3, .class-row2 h3{
+    text-align: left;
 }
 
-
-
+}
 
 
 
@@ -588,6 +588,39 @@ video {
   line-height: 1.4rem;
 }
 
+
+@media only screen and (max-width: 480px) {
+
+
+  .thesis-title {
+    text-align: center;
+    padding: 32px 0 16px 0;
+  }
+
+
+  .thesis {
+    width: 100%;
+
+    padding-bottom: 24px;
+  }
+
+  video {
+    /* width: 110% */
+
+  }
+
+  .container {
+
+  }
+
+  .thesis-modules {
+    display: none;
+  }
+
+  .thesis-copy {
+    display: none;
+  }
+}
 /* Footer */
 
 footer {
@@ -615,4 +648,20 @@ footer ul li{
 footer a {
   color: #949496;
   font-size: .90rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+  footer {
+    padding-bottom: 16px;
+    border-top: none;
+  }
+  footer nav {
+    display: none;
+  }
+
+  footer span {
+    padding: 16px 35px;
+  }
+
 }
